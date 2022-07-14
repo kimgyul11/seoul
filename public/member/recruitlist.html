@@ -19,19 +19,57 @@
 		a{
 			color:black;
 		}
+		
+		#sch{
+			background-color:red;
+			height:150px;
+			margin:auto;
+		}
+		.pagetop{
+		height:200px;
+		}
 	</style>
 </head>
 <body>
-	<h1>입사지원내역</h1>
-	<hr>
-	<br>
-	<br>
-	<br>
+<!-- 네비바 -->
+	<nav class="navbar" style="background-color:#eceff1">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="recruitlist.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-emoji-angry" viewBox="0 0 16 16">
+		  			<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+	  				<path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z"/>
+				</svg>
+				WELLCOME
+			</a>
+			<form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+<!-- 네비바 끝 -->	
+	
+	
+<!-- 페이지 제목 -->
+	<div class="pagetop">
+		<h1>입사지원내역</h1>
+	</div>
+<!--제목 끝  -->	
+
+
 	<!-- 검색창 -->
-<div class="container">
-	<div class="row row-cols-4">
+<div class="container" style="border:1px solid;">
+	<div class="row row-cols-7" height:55px;">
 		<div class="col">
-			<select class="form-select" aria-label="Default select example">
+			<select class="form-select m-2" aria-label="Default select example">
+				<option selected>검색구분</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+			</select>
+		</div>
+		<div class="col">
+			<select class="form-select m-2" aria-label="Default select example">
 				<option selected>Open this select menu</option>
 				<option value="1">One</option>
 				<option value="2">Two</option>
@@ -39,33 +77,37 @@
 			</select>
 		</div>
 		<div class="col">
-			<select class="form-select" aria-label="Default select example">
+			<select class="form-select m-2" aria-label="Default select example">
 				<option selected>Open this select menu</option>
 				<option value="1">One</option>
 				<option value="2">Two</option>
 				<option value="3">Three</option>
 			</select>
 		</div>
-		<div class="col">
+		<div class="col m-2">
 			<select class="form-select" aria-label="Default select example">
-				<option selected>Open this select menu</option>
-				<option value="1">One</option>
-				<option value="2">Two</option>
-				<option value="3">Three</option>
-			</select>
-		</div>
-		<div class="col">
-			<select class="form-select" aria-label="Default select example">
-				<option selected>Open this select menu</option>
+				<option selected>검색구분</option>
 				<option value="1">One</option>
 				<option value="2">Two</option>
 				<option value="3">Three</option>
 			</select>
 		</div>
 	</div>
+	<div class="row row-cols-4"style=" height:50px; ">
+		<form class="d-flex" role="search">
+			<input class="form-control m-2" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
+			<button class="btn btn-outline-success m-2" type="submit">Search</button>
+		</form>
+		<form class="d-flex" role="search">
+			<input class="form-control m-2" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
+		</form>
+	</div>
 </div>
-
-    <!--검생창 끝  -->
+ <!--검생창 끝  -->
+ 
+ 
+<br>
+<br>   
     
     <!--테이블 시작  -->
 	<table class="table table-hover" id="thcenter">
@@ -73,7 +115,7 @@
 	        <tr class="table-dark">
 	            <th scope="col" >
 	            	<div class="form-check">
-	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"onclick='selectAll(this)'>
 	    				<label class="form-check-label" for="flexCheckDefault">
 	 			   		</label>
 					</div>
@@ -92,7 +134,7 @@
 	        <tr>
 	            <th scope="row">
 	            	<div class="form-check">
-	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	    				<input class="form-check-input" type="checkbox" value="5번" id="flexCheckDefault"name='nember'>
 	    				<label class="form-check-label" for="flexCheckDefault">
 	 			   		</label>
 					</div>
@@ -109,7 +151,7 @@
 	       <tr>
 	            <th scope="row">
 	            	<div class="form-check">
-	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name='nember' >
 	    				<label class="form-check-label" for="flexCheckDefault">
 	 			   		</label>
 					</div>
@@ -126,7 +168,7 @@
 	        <tr>
 	            <th scope="row">
 	            	<div class="form-check">
-	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name='nember'>
 	    				<label class="form-check-label" for="flexCheckDefault">
 	 			   		</label>
 					</div>
@@ -143,7 +185,7 @@
 	        <tr>
 	            <th scope="row">
 	            	<div class="form-check">
-	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name='nember'>
 	    				<label class="form-check-label" for="flexCheckDefault">
 	 			   		</label>
 					</div>
@@ -160,7 +202,7 @@
 	        <tr>
 	            <th scope="row">
 	            	<div class="form-check">
-	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	    				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name='nember'>
 	    				<label class="form-check-label" for="flexCheckDefault">
 	 			   		</label>
 					</div>
@@ -182,5 +224,15 @@
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script>
+	function selectAll(selectAll)  {
+		  const checkboxes 
+		       = document.getElementsByName('nember');
+		  
+		  checkboxes.forEach((checkbox) => {
+		    checkbox.checked = selectAll.checked;
+		  })
+		}
+	</script>
 </body>
 </html>
