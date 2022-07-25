@@ -6,8 +6,14 @@
 	<title>memberModform</title>
 	<!-- CDN : content Delivery Network  -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Brush+Script&family=Song+Myung&display=swap');
+		.ng-font2{			
+			font-family: 'Gowun Dodum', sans-serif;
+		}
 	.input-form {
       max-width: 70%;
 		border:1px solid;
@@ -26,7 +32,37 @@
 		object-fit:cover;
 	}
 	</style>
-<body>
+<body class="ng-font2">
+	<nav class="navbar" style="background-color:#eceff1">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="memberList.html">
+				<i class="fa-solid fa-biohazard"></i>
+				WELCOME
+			</a>
+			
+			<button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+			    aria-controls="offcanvasRight"><i class="bi bi-list"></i>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+			    <div class="offcanvas-header">
+			        <h5 class="offcanvas-title" id="offcanvasRightLabel">메뉴</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			    </div>
+		    	<div class="offcanvas-body">
+		    		<div class="rightmenu">
+		    			<i class="bi bi-person"></i>
+		    		</div>
+		    		
+		    		<p>환영합니다.<b>관리자</b>님</p>
+		    		<hr>
+		    		<ul>
+		    			<li>로그아웃<i class="fa-solid fa-right-from-bracket"></i>
+		    			<li>설정<i class="fa-solid fa-gear"></i>
+		    		</ul>
+			    </div>
+			</div>
+		</div>
+	</nav>
 	<div class="container">
 		<div class="input-form-backgroud row">
         	<div class="input-form col-md-12 mx-auto">
@@ -135,6 +171,7 @@
 	     </footer>
     </div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/86d85c3d85.js" crossorigin="anonymous"></script>
 </body>
 </html>
 
