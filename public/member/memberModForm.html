@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="kr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>memberModform</title>
+	<!-- CDN : content Delivery Network  -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+	<style>
+	.input-form {
+      max-width: 70%;
+		border:1px solid;
+      margin-top: 80px;
+      padding: 32px;
+	}
+	.box{
+		width:150px;
+		height:150px;
+		border-radius:70%;
+		overflow:hidden;
+	}
+	.profile{
+		width:100%;
+		height:100%;
+		object-fit:cover;
+	}
+	</style>
+<body>
+	<div class="container">
+		<div class="input-form-backgroud row">
+        	<div class="input-form col-md-12 mx-auto">
+				<h4 class="mb-3">회원정보수정</h4>
+          		<hr>
+          		<div class="row justify-content-start">
+          			<div class="col-2">
+	        			<div class="box" style="background:black;">
+	        				<img class="profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqtDg1kbYjvjQ-V-W02jlz_Nko2XGdhjJ5HGg3NWMq0I5WUkYjmdOb2U0fWoltO438hY&usqp=CAU">
+	        			</div>
+        			</div>
+        			<div class="row justify-content-start">
+	        			<div class="input-group mb-3"style="width:50%">
+	  						<input type="file" class="form-control" id="inputGroupFile02">
+							<label class="input-group-text" for="inputGroupFile02">수정</label>
+						</div>
+					</div>
+        		</div>
+          		<form class="validation-form" novalidate>
+            		<div class="row">
+             			<p class="mb-0">아이디</p>
+              			<div class="col-md-8 mb-2">
+	                		<input type="text" class="form-control" id="name" placeholder="아이디를 입력해주세요" value="" required>
+	                		<div class="invalid-feedback">
+	                  		아이디를 입력해주세요.
+	                		</div>
+              			</div>
+            		</div>
+            		<div class="row mb-2">
+            			<div class="col-md-8"
+			           		<label for="password">비밀번호</label>
+			              	<input type="text" class="form-control" id="email" placeholder="숫자,영문,특수문자 조합 최소8자" required>
+			            </div> 	
+		            </div>
+		            <div class="row mb-2">
+		            	<div class="col-md-8"
+			              	<label for="em">이름</label>
+			              	<input type="email" class="form-control" id="email" placeholder="이름을 입력해주세요" required>
+		            	</div>
+		            </div>
+		            <div class="row">
+		            	<div class="col-md-5">
+		            		<label for="date">생년월일</label>
+		            		<input type="text" class="form-control" placeholder="ex)19921013">
+		            	</div>
+		            	<div class="col-md-3">
+		            		<label for="date">성별</label>
+		            		<select class="form-select" aria-label="Default select example">
+						  		<option selected>성별을 선택하세요</option>
+						  		<option value="남">남</option>
+						  		<option value="여">여</option>
+							</select>
+		            	 </div>
+		            </div>
+		            	 
+		            	<div class="row mb-2">
+			            	<div class="col-md-8">
+			            		<label for="kokuseki">국적</label>
+			            		<input type="text" class="form-control"placeholder="국적을 입력하세요">
+			            	</div>	
+		            	</div>
+		            	<div class="row">
+		            	<p class="mb-0">관심언어</p>
+		            		<div class="col-md-6">
+		            			<input type="" class="form-control">
+		            		</div>
+		            		<div class="col-md-2 ml-0">
+		            			<button type="button" class="btn btn-outline-dark">+</button>
+		            		</div>	
+		            	</div>
+		            	
+		            <div class="mb-2">
+		              	<label for="email">이메일</label>
+		             	<input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요" required>
+		              	<div class="invalid-feedback">이메일을 입력해주세요.</div>
+		            </div>
+		            <div class="justify-content-start">
+		            	<input type="checkbox" class="custom-control-input" id="aggrement" required>
+		              	<label class="custom-control-label" for="aggrement">수신동의</label>
+		              	<input type="checkbox" class="custom-control-input" id="aggrement" required>
+		              	<label class="custom-control-label" for="aggrement">수신거부</label>
+		            </div>
+		            <div class="mb-2">
+		              	<label for="address">주소</label>
+		              	<input type="text" class="form-control" id="address" placeholder="서울특별시 강남구" required>
+		              	<div class="invalid-feedback">주소를 입력해주세요.</div>
+		            </div>
+		            <div class="mb-2">
+		              	<label for="address2">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
+		              	<input type="text" class="form-control" id="address2" placeholder="상세주소를 입력해주세요.">
+		            </div>
+		            <hr class="mb-4">
+		            <div class="custom-control custom-checkbox">
+		            	<input type="checkbox" class="custom-control-input" id="aggrement" required>
+		              	<label class="custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
+		            </div>
+		            <div class="mb-4"></div>
+		            <div class="row ">
+		            	<div class="boder d-flex justify-content-center">
+		            		<button class="btn btn-primary btn-lg btn-block" type="submit">수정완료</button>
+		            		<a href="memberList.html">
+		            			<button class="btn btn-primary btn-lg btn-block"style="margin-left:5px;" type="submit">취소</button>
+		            		</a>
+		            	</div>
+		            </div>
+	          	</form>
+	        </div>
+		</div>
+	    <footer class="my-3 text-center text-small">
+	    	<p class="mb-1">&copy; 2021 YD</p>
+	     </footer>
+    </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
+

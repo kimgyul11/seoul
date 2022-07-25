@@ -51,6 +51,9 @@
 		#no{
 			font-size:150px;
 		}
+		td{
+			cursor:pointer;
+		}
 	</style>
 </head>
 <body class="ng-font2">
@@ -291,10 +294,35 @@
 	</nav>
 	<div id="kensaku">	
 		<div class="float-start">
-			<button type="button" class="btn btn-outline-danger" style="margin:5px;"><i class="fa-solid fa-ban"></i></button>
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<button type="button" class="btn btn-outline-danger" style="margin:5px;">
+				<i class="fa-solid fa-ban"></i>
+				
+				</button>
+			</div>
+			
 		</div>
 		<div class="float-start">
-			<button type="button" class="btn btn-outline-danger" style="margin:5px;"><i class="fa-solid fa-trash-can"></i></button>
+		<button type="button" class="btn btn-outline-danger "style="margin:5px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			<i class="fa-solid fa-trash-can"></i>
+		</button>
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">알림</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+		      </div>
+		      <div class="modal-body">
+		        삭제 하시겠습니까?
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+		        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">확인</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 		</div>
 		<div class="float-end">
 			<a href="memberRegForm.html">
