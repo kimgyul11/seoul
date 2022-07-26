@@ -16,7 +16,6 @@
 		}
 	.input-form {
       max-width: 70%;
-		border:1px solid;
       margin-top: 80px;
       padding: 32px;
 	}
@@ -63,18 +62,20 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container">
-		<div class="input-form-backgroud row">
-        	<div class="input-form col-md-12 mx-auto">
+	<!-- 시작 -->
+	<div class="container"style="border:1px solid;">
+		<div class="input-form-backgroud row " style="border:1px solid;">
+        	<div class="input-form col-md-12 mx-auto"style="border:1px solid;">
+        	
 				<h4 class="mb-3">회원정보수정</h4>
           		<hr>
-          		<div class="row justify-content-start">
+          		<div class="row justify-content-center" >
           			<div class="col-2">
 	        			<div class="box" style="background:black;">
 	        				<img class="profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqtDg1kbYjvjQ-V-W02jlz_Nko2XGdhjJ5HGg3NWMq0I5WUkYjmdOb2U0fWoltO438hY&usqp=CAU">
 	        			</div>
         			</div>
-        			<div class="row justify-content-start">
+        			<div class="row justify-content-center">
 	        			<div class="input-group mb-3"style="width:50%">
 	  						<input type="file" class="form-control" id="inputGroupFile02">
 							<label class="input-group-text" for="inputGroupFile02">수정</label>
@@ -82,9 +83,10 @@
 					</div>
         		</div>
           		<form class="validation-form" novalidate>
-            		<div class="row">
-             			<p class="mb-0">아이디</p>
+            		<div class="row" style="border:1px solid;">
+             			
               			<div class="col-md-8 mb-2">
+              				<p class="mb-0">아이디</p>
 	                		<input type="text" class="form-control" id="name" placeholder="아이디를 입력해주세요" value="" required>
 	                		<div class="invalid-feedback">
 	                  		아이디를 입력해주세요.
@@ -92,13 +94,13 @@
               			</div>
             		</div>
             		<div class="row mb-2">
-            			<div class="col-md-8"
+            			<div class="col-md-8" >
 			           		<label for="password">비밀번호</label>
 			              	<input type="text" class="form-control" id="email" placeholder="숫자,영문,특수문자 조합 최소8자" required>
 			            </div> 	
 		            </div>
 		            <div class="row mb-2">
-		            	<div class="col-md-8"
+		            	<div class="col-md-8">
 			              	<label for="em">이름</label>
 			              	<input type="email" class="form-control" id="email" placeholder="이름을 입력해주세요" required>
 		            	</div>
@@ -118,7 +120,7 @@
 		            	 </div>
 		            </div>
 		            	 
-		            	<div class="row mb-2">
+		            	<div class="row mb-2 ">
 			            	<div class="col-md-8">
 			            		<label for="kokuseki">국적</label>
 			            		<input type="text" class="form-control"placeholder="국적을 입력하세요">
@@ -126,25 +128,29 @@
 		            	</div>
 		            	<div class="row">
 		            	<p class="mb-0">관심언어</p>
-		            		<div class="col-md-6">
+		            		<div class="col-md-3 mx-auto">
 		            			<input type="" class="form-control">
-		            		</div>
-		            		<div class="col-md-2 ml-0">
-		            			<button type="button" class="btn btn-outline-dark">+</button>
+		            			
 		            		</div>	
-		            	</div>
-		            	
-		            <div class="mb-2">
-		              	<label for="email">이메일</label>
-		             	<input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요" required>
-		              	<div class="invalid-feedback">이메일을 입력해주세요.</div>
-		            </div>
-		            <div class="justify-content-start">
-		            	<input type="checkbox" class="custom-control-input" id="aggrement" required>
-		              	<label class="custom-control-label" for="aggrement">수신동의</label>
-		              	<input type="checkbox" class="custom-control-input" id="aggrement" required>
-		              	<label class="custom-control-label" for="aggrement">수신거부</label>
-		            </div>
+	            			<div class="col mx-auto">
+		            			<button type="button" class="btn btn-outline-dark ">+</button>
+		            		</div>
+		            	</div>	
+		            	<div class="row">
+		            	<div class="col-md-6 mx-auto">
+				            <div class="mb-2">
+				              	<label for="email">이메일</label>
+				             	<input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요" required>
+				              	<div class="invalid-feedback">이메일을 입력해주세요.</div>
+				            </div>
+				            <div class="justify-content-start">
+				            	<input type="checkbox" class="custom-control-input" id="aggrement" required>
+				              	<label class="custom-control-label" for="aggrement">수신동의</label>
+				              	<input type="checkbox" class="custom-control-input" id="aggrement" required>
+				              	<label class="custom-control-label" for="aggrement">수신거부</label>
+				            </div>
+		           		</div>
+		           		</div>
 		            <div class="mb-2">
 		              	<label for="address">주소</label>
 		              	<input type="text" class="form-control" id="address" placeholder="서울특별시 강남구" required>
@@ -164,7 +170,7 @@
             			<button class="btn btn-primary btn-lg btn-block"style="margin-left:5px;" type="submit">취소</button>
 	            	</div>
 	            </div>
-	    	</div>        	  	
+	    	</div>
 		</div>
 	    <footer class="my-3 text-center text-small">
 	    	<p class="mb-1">&copy; 2021 YD</p>
