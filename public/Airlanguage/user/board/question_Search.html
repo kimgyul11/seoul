@@ -23,7 +23,44 @@
 			margin:10px;
 			border-radius:10px;
 		}
-		
+		.qbox{
+			width:600px;
+			height:300px;
+			margin:auto;
+			border:1px solid;
+		}
+		.content{
+			height:500px;
+			border:1px solid;
+		}
+		.head-background{
+			margin-top:15px;
+			padding: 32px;
+			background:#f1f8e9;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+			-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+			box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+		}
+		.content-head{
+			background-color:red;
+			font-size:20px;
+			height:50px;
+		}
+		.content-middel{
+			margin-top:50px;
+			background-color:blue;
+			height:900px;
+		}
+		.content-box{
+			width:500px;
+			height:100px;
+			border-radius:5px;
+			border:1px soild;
+			margin-top:10px;
+		}
 	</style>
 </head>
 <body class="ng-font2">
@@ -47,24 +84,70 @@
 	</nav>
 	
 			
-	
-	<div class="container" style="border:1px solid;">
-		<header class="searchbox row mx-auto">
-			<div class="searchbox-content col-mb-12">
-				<div class="row">
-					<div class="col-sm-9 mx-auto">
-						<input class="textbox" type="text">
-				
+<!-- 검색창 -->	
+<div class="container head-background">
+	<div class="qbox">
+		<div class="row text-center">
+			<div class="col mt-5">
+				<p class="m-0">질문 검색</p>
+				<select class="form-select" aria-label="Default select example">
+					<option selected>언어를 선택해주세요.</option>
+					<option value="1">한국어</option>
+					<option value="2">일본어</option>
+					<option value="3">영어</option>
+				</select>	
+			</div>
+		</div>	
+		<div class="row text-center mt-5">	
+			<div class="col">
+				<p class="m-0">에 대한 단어 검색하기</p>
+				<input type="text" class="form-control" placeholder="검색어를 입력해주세요.">
+			</div>
+		</div>
+		<div class="float-end mt-3">
+			<button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-magnifying-glass"></i>검색</button>
+		</div>
+	</div>		
+</div>
+
+<div class="container">
+	<hr>
+	<!--  본문 헤드입니다  -->
+	<div class="row">
+		<div class="content col-md-12">
+			<div class="row">
+				<div class="col content-head">
+					<div class="float-start">답변을 기다리는 질문</div>
+					<div class="float-end">
+						<a class="nav-link" href="#">+질문하기</a>
 					</div>
+				</div>	
+			</div>
+			<div class="row text-center content-middel">
+				<div class="col-md-6 "style="background-color:black">
+					<input type="text" class="content-box">
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="content-box">
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="content-box">
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="content-box">
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="content-box">
+				</div>
+				<div class="col-md-6"style="background-color:black">
+					<input type="text" class="content-box">
 				</div>
 			</div>
-		</header>>
+			
+		</div>
 	</div>
-	
-	
-	
-	
-
+</div>	
+<!-- 아래 -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/86d85c3d85.js" crossorigin="anonymous"></script>
 </body>
