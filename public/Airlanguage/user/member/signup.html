@@ -29,16 +29,19 @@
 			box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 		}
 		.zentai{
-			border:1px solid;
 			width:70%;
 			margin:auto;
+		}
+		.zentai-content{
+			margin:auto;
+			width:550px;
 		}
 	</style>
 </head>
 <body class="ng-font2">
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><i class="fa-solid fa-plane-departure"></i>AIR LANGUAGE</a>
+			<a class="navbar-brand" href="loginForm.html"><i class="fa-solid fa-plane-departure"></i>AIR LANGUAGE</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-targer="#collapasibleNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -58,79 +61,81 @@
 	<div class="container">
 		<div class="input-form-background row">
 			<div class="input-form col-md-12 mx-auto" >
-				<div class="zentai">
-				<div class="row text-center">
-					<div class="col-4 mx-auto">
-						<h3 class="mb-3"><i class="fa-solid fa-plane-departure"></i>환영합니다.</h4>
-					</div>
-				</div>
-				<div class="row">
-				<p>아이디를 입력해주세요</p>
-					<div class="col-8 mx-auto d-flex justify-content-center ">
-						<div class="form-floating mb-3">
-							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-							<label for="floatingInput">아이디</label>
-						</div>
-						<div class="form-floating mb-3">
-							<button class="btn btn-light m-2" type="button"> 아이디 중복확인</button>
-						</div>
-					</div>	
-				</div>		
-				<div class="row m-1">	
-					<div class="col-8 mx-auto">
-						<div class="form-floating mb-3">
-							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-							<label for="floatingInput">비밀번호</label>
-						</div>
-						<div class="form-floating mb-3">
-							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-							<label for="floatingInput">비밀번호 확인</label>
+				<div class="zentai container">
+					<div class="row text-center">
+						<div class="col-4 mx-auto">
+							<h3 class="mb-3"><i class="fa-solid fa-plane-departure"></i>환영합니다.</h4>
 						</div>
 					</div>
-				</div>
-				<div class="row m-1">
-					<div class="col-8 mb-3 mx-auto">
-						<input type="name" class="form-control" id="email" placeholder="이름을 입력해주세요." required>
+					<div class="zentai-content container">
+						<div class="row m-1">
+							<p class="m-0">아이디</p>
+							<div class="col mb-3 mx-auto">
+								<input type="name" class="form-control" id="email" required>
+							</div>
+							<div class="col ml-1">
+								<button type="button" class="btn btn-outline-dark">중복확인</button>
+							</div>
+						</div>
+						<div class="row m-1">
+							<div class="col-9 mb-3">
+								<p class="m-0">비밀번호</p>
+								<input type="name" class="form-control" id="email" required>
+							</div>
+						</div>
+						<div class="row m-1">
+							<div class="col-9 mb-3">
+								<p class="m-0">비밀번호 확인</p>
+								<input type="name" class="form-control" id="email" required>
+							</div>
+						</div>
+						<div class="row m-1">
+							<div class="col-9 mb-3">
+								<p class="m-0">이름</p>
+								<input type="name" class="form-control" id="email" required>
+							</div>
+						</div>
+						<div class="row m-1">
+							<div class="col-9 mb-3">
+								<p class="m-0">이메일</p>
+								<input type="name" class="form-control" id="email" required>
+							</div>
+						</div>
+						<div class="row m-1">
+							<div class="col-9 mb-3">
+								<p class="m-0">휴대전화를 입력해주세요.</p>
+								<input type="name" class="form-control" id="email" required>
+							</div>
+						</div>
+						<div class="row m-1">
+							<div class="col-9 mb-3">
+								<p class="m-0">국적을 선택하세요.</p>
+								<input type="name" class="form-control" id="email" required>
+							</div>
+						</div>
+						<div class="row m-1">
+							<div class="col-9 mb-3">
+								<p class="m-0">관심언어를 선택하세요.</p>
+								<input type="name" class="form-control" id="email" required>
+							</div>
+						</div>
+						<div class="row m-1">
+							<div class="col-9 mb-3">
+								<p class="m-0">사용가능한 언어를 선택해주세요.</p>
+								<input type="name" class="form-control" id="email" required>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-3">
+							<button type="button" class="btn btn-outline-dark">회원가입</button>
+						</div>	
+						<div class="col-3">
+							<button type="button" class="btn btn-outline-dark">취소</button>
+						</div>	
 					</div>
 				</div>
-				<div class="row m-1">
-					<div class="col-8 mb-3 mx-auto">
-						<p class="m-0">이름을 입력해주세요.</p>
-						<input type="name" class="form-control" id="email" required>
-					</div>
-				</div>
-				<div class="row m-1">
-					<div class="col-8 mb-3 mx-auto">
-						<p class="m-0">이메일을 입력해주세요.</p>
-						<input type="name" class="form-control" id="email" required>
-					</div>
-				</div>
-				<div class="row m-1">
-					<div class="col-8 mb-3 mx-auto">
-						<p class="m-0">휴대전화를 입력해주세요.</p>
-						<input type="name" class="form-control" id="email" required>
-					</div>
-				</div>
-				<div class="row m-1">
-					<div class="col-8 mb-3 mx-auto">
-						<p class="m-0">국적을 선택하세요.</p>
-						<input type="name" class="form-control" id="email" required>
-					</div>
-				</div>
-				<div class="row m-1">
-					<div class="col-8 mb-3 mx-auto">
-						<p class="m-0">관심언어를 선택하세요.</p>
-						<input type="name" class="form-control" id="email" required>
-					</div>
-				</div>
-				<div class="row m-1">
-					<div class="col-8 mb-3 mx-auto">
-						<p class="m-0">사용가능한 언어를 선택해주세요.</p>
-						<input type="name" class="form-control" id="email" required>
-					</div>
-				</div>
-				<input type="name" class="form-control" id="email" required>
-			</div>
 			</div>
 		</div>
 	</div>
