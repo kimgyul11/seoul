@@ -129,21 +129,21 @@
 							<p class="m-0">생년월일</p>
 								<div class="col-md-3">
 									<div class="form-floating mb-3">
-										<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+										<input type="text" class="form-control" id="floatingInput" placeholder="">
 										<label for="floatingInput">년도</label>
 									</div>
 								</div>
 								<!--월 입력 -->
 								<div class="col-md-3">
 									<div class="form-floating mb-3">
-										<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+										<input type="text" class="form-control" id="floatingInput" placeholder="">
 										<label for="floatingInput">월</label>
 									</div>
 								</div>
 								<!--일 입력 -->
 								<div class="col-md-3">
 									<div class="form-floating mb-3">
-										<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+										<input type="text" class="form-control" id="floatingInput" placeholder="">
 										<label for="floatingInput">일</label>
 									</div>
 								</div>	
@@ -168,7 +168,7 @@
 							<div class="row m-2">
 								<p class="m-0">휴대전화</p>
 								<div class="col">
-									<input type="text" class="form-control">
+									<input type="text" class="form-control"placeholder="번호를 입력해주세요">
 								</div>
 							</div>
 							<div class="row m-2">
@@ -194,12 +194,36 @@
 							</div>
 							<br>
 							<div class="d-flex gap-2 justify-content-center">
+								<a href="">
 								<button class="btn btn-outline-success" type="button">완료</button>
-  								<button class="btn btn-outline-danger" type="button">취소</button>
+  								</a>
+  								<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									 취소
+								</button>
 							</div>
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+										<div class="modal-content">
+										<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">알림</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+										취소하고 홈화면으로 이동하시겠습니까?<br>
+										작성중인 내용은 전부 삭제됩니다.
+										</div>
+										<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+										<a href="../Home/home.html">
+											<button type="button" class="btn btn-primary">확인</button>
+										</a>
+										</div>
+									</div>
+								</div>
+							</div>							
 						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>
