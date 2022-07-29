@@ -13,16 +13,24 @@
 			font-family: 'Gowun Dodum', sans-serif;
 		}
 		
+		.container-top{
+			margin-top:250px;
+		}
+		
+		.container{
+			border:1px solid;
+		}
 		.content-wrap{
-			display:flex;
-			flex-direction:column;
-			border:1px solid;
 			background-color:red;
+			
 		}
-		p{
-			border:1px solid;
-			background-color:blue;
+		.button-wrap{
+			margin:150px			
 		}
+		.button-size{
+			width:150px;
+		}
+		
 	</style>
 </head>
 <body class="ng-font2">
@@ -43,13 +51,34 @@
 				</ul>
 			</div>
 		</div>
-	</nav>	
-
-<div class="content-wrap">
-	<p>안녕</p>
-	<p>안녕</p>
-	<p>안녕</p>
-	
+	</nav>
+		
+<!-- 본문 -->
+<div class="container container-top">
+	<div class="content-wrap">
+		<div class="row text-center">
+			<div class="col-sm-3" style="background-color:blue;">
+				이미지1
+			</div>
+			<div class="col-sm-9">
+				<div class="row">
+					<div class="col-8 col-sm-8"style="background-color:black;">
+					환영함글씨 들어가는 영역
+					</div>
+					<div class="col-sm-4" style="background-color:blue;">
+						이미지2
+					</div>	
+				</div>
+			</div>		
+		</div>
+	</div>
+	<div class="button-wrap row">
+		<div class="col-md-3 mx-auto">
+			<button type="button" class="btn btn-secondary btn-lg button-size">홈</button>
+			<button type="button" class="btn btn-secondary btn-lg button-size">로그인</button>
+		</div>
+	</div>
+		
 </div>
 
 
