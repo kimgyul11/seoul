@@ -12,7 +12,49 @@
 		.ng-font2{
 			font-family: 'Gowun Dodum', sans-serif;
 		}
-
+	.head-wrap{
+		width:500px;
+		margin:auto;
+		border:1px solid #e0e0e0;
+		border-radius:15px;
+		padding:25px;
+	}
+	.top_comment{
+		font-size:50px;
+		margin:0px;
+		text-align:center;
+	}
+	.top{
+		
+		width:700px;
+		height:400px;
+		margin:auto;
+		border:1px solid #e0e0e0;
+		overflow:visible;
+	}
+	.box{
+		width:350px;
+		height:250px;
+		overflow:hidden;
+		border:1px solid;
+		border-radius:15px;
+		-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+		-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+		box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+		margin:auto;
+	}
+	.box > img {
+		position: absolute;
+		width: 100%;
+		
+		/* 이미지 위치 */
+		top: 50%; 
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}	
+	#br{
+		margin-top:150px;
+	}
 	</style>
 </head>
 <body class="ng-font2">
@@ -38,6 +80,10 @@
 
 <!-- 상단 -->
 <div class="container">
+	<div class="top_comment">
+		글 들어가는 공간 AIR LANGUAGE
+	</div>
+	<img src="../image/map.png">
 	<div class="head-wrap">
 		<div class="row">
 			<div class="col">
@@ -59,7 +105,70 @@
 				<input type="text" class="form-control"placeholder="단어를 입력해주세요.">
 			</div>
 		</div>
+		<br>
+		<div class="row">
+			<div class="col">
+				<div class="d-grid gap-2 mx-a">
+					<button class="btn btn-primary" type="button">단어 검색</button>
+					<button class="btn btn-primary" type="button">게시판으로 이동</button>
+				</div>
+			</div>
+		</div>
 	</div>
+	<div id="br"></div>
+	<hr>
+	<div id="br"></div>
+	<!-- 중간 소개-->
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="box"></div>
+		</div>
+		<div class="col-sm-4">
+			<div class="box">상황에 맞는 단어,적절한 상황에 맞는단어선택</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="box">화이팅</div>
+		</div>
+	</div>
+	
+	<div id="br"></div>
+	<!-- 마지막 질문항목 -->
+	<div class="row text-center">
+		<div class="col-sm-4">
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>			
+		</div>
+		<div class="col-sm-4">
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>			
+		</div>
+		<div class="col-sm-4">
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>			
+		</div>
+	</div>
+	
+	
+	
+	
 </div>
 
 
