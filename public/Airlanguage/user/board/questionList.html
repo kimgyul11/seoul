@@ -7,33 +7,7 @@
 	<!-- CDN : content Delivery Network  -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Brush+Script&family=Song+Myung&display=swap');
-		.ng-font2{
-			font-family: 'Gowun Dodum', sans-serif;
-		}
-		.zentai{
-			margin-top:20px;
-		}
-		.zentai_box{
-			border:1px solid;
-			width:700px;
-			height:100%;
-			margin:auto;
-			
-		}
-		.search-background{
-			margin:auto;
-			width:700px;
-			height:50px;
-		}
-		.search-boxt{
-			margin:auto;
-		}
-		td{
-			cursor:pointer;
-		}
-	</style>
+	<link href="../css/questionList.css" rel="stylesheet" type="text/css">
 </head>
 <body class="ng-font2">
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -55,28 +29,33 @@
 		</div>
 	</nav>
 	
-	<div class="search-background">
-		<div class="search-boxt mt-5">
-			<div class="d-flex justify-content-center">
-	    		<select class="form-select" aria-label="Default select example" style="margin-left:5px; width:300px;">
-					<option selected>언어선택</option>
-					<option value="KOR">한국어</option>
-					<option value="JPN">일본어</option>
-					<option value="ENG">영어</option>
-				</select>
-	   			 <input class="form-control" type="text" placeholder="단어를 입력해주세요" aria-label="default input example" >
-				 <button type="button" class="btn btn-outline-success" style="margin-left:20px;"><i class="fa-solid fa-magnifying-glass"></i></button>	
-				 <button type="button" class="btn btn-outline-danger" style="margin-left:20px;"><i class="fa-solid fa-rotate-left"></i></button>	
+	<div class="container">
+	<!-- 검색창 -->
+		<div class="block"></div>
+		<div class="search-background">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+			    		<select class="form-select" aria-label="Default select example" style="margin-left:5px; width:300px;">
+							<option selected>언어선택</option>
+							<option value="KOR">한국어</option>
+							<option value="JPN">일본어</option>
+							<option value="ENG">영어</option>
+						</select>
+			   			 <input class="form-control" type="text" placeholder="단어를 입력해주세요" aria-label="default input example" >
+						 <button type="button" class="btn btn-outline-success" style="margin-left:20px;"><i class="fa-solid fa-magnifying-glass"></i></button>	
+						 <button type="button" class="btn btn-outline-danger" style="margin-left:20px;"><i class="fa-solid fa-rotate-left"></i></button>	
+					</div>
+				</div>
 			</div>	
 		</div>
-	</div>	
-	<div class="container">
+		<!-- 질문리스트 -->
 		<div class="zentai">
 			<div class="zentai_box">
 				<table class="table table-hover">
 					<a href="https://naver.com">	
 					<tr>
-						<td onClick="location.href='https://naver.com'">이것은 한국어로 무엇이라고 하나요?I believe in you
+						<td onClick="location.href='questionView.html'">이것은 한국어로 무엇이라고 하나요?I believe in you
 							<div class="float-end"><a href="#"><i class="fa-solid fa-angles-right"></i></div>
 						</td>
 					</tr>
