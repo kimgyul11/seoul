@@ -13,9 +13,6 @@
 			font-family: 'Gowun Dodum', sans-serif;
 		}
 		
-	body{
-		background-color:#eceff1;
-	}	
 	.head-wrap{
 		width:500px;
 		margin:auto;
@@ -24,28 +21,12 @@
 		padding:25px;
 		
 	}
-	.top-comment{
-		font-size:50px;
-		margin:auto;
-		padding: 5px 10px;
-		position: absolute;
-		top: 25%;
-		left: 35%;
-	}
+
 	.top-image{
 		width: 100%;
 		vertical-align: middle;
 	}
-	.top-wrap{
-		width:1100px;
-		height:1000px;
-		border-radius:80%;
-		text-align:center;
-		margin:auto;
-		-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-		-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-		box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-	}
+
 	.top{
 		
 		width:700px;
@@ -71,11 +52,34 @@
 	#br{
 		margin-top:150px;
 	}
+	
+	.jb-wrap {
+	margin:auto;
+	position: relative;
+	}
+	.jb-wrap img {
+		vertical-align: middle;
+		width:100%;
+		height:700px;
+	}
+	.jb-text {
+		text-align: center;
+		font-size:60px;
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+	}
+	.p1{
+		font-size:40px;
+		color:red;
+	}
+	
 	</style>
 </head>
 <body class="ng-font2">
 <!-- 네비게이션바 -->
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<nav class="navbar navbar-expand-sm  navbar-light"style="background-color:#616161;">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="home.html"><i class="fa-solid fa-plane-departure"></i>AIR LANGUAGE</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-targer="#collapasibleNavbar">
@@ -93,25 +97,22 @@
 			</div>
 		</div>
 	</nav>
-
+	<div class="jb-wrap" style="height:650px;background-color:#fafafa;">
+		<div class="jb-text">
+			<p>AIR LANGUAGE</p>
+			<p class="p1">언제어디서나 원어민에게 물어보세요
+		</div>
+		<img src="../image/map.png" class="mt-0">
+	</div>
 <!-- 상단 -->
 <div class="container">
-	<br>
-	<div class="top-wrap">
-		<div class="top-comment">
-			언제 어디서나 원어민과 함께<br>
-			AIR LANGUAGE
-		</div>
-		<div class="top-image">
-			<img src="../image/map.png"style="width:1100px;height:800px;">
-		</div>
-	</div>
 	<br>
 	<br>
 	<br>
 	<hr>
 	<br>
 	<br>
+	
 	<!-- 검색창 -->
 	<div class="head-wrap">
 		<div class="row">
@@ -121,7 +122,13 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<input type="text" class="form-control">
+				<select class="form-select" aria-label="Default select example">
+			  		<option selected>언어를 선택하세요</option>
+			  		<option value="한국어">한국어</option>
+			  		<option value="영어">영어</option>
+			  		<option value="영어">일본어</option>
+			  		<option value="영어">베트남어</option>
+				</select>
 			</div>
 		</div>
 		<div class="row">
@@ -138,8 +145,8 @@
 		<div class="row">
 			<div class="col">
 				<div class="d-grid gap-2 mx-a">
-					<button class="btn btn-outline-dark" type="button">단어 검색</button>
-					<button class="btn btn-outline-dark" type="button">게시판으로 이동</button>
+					<a href="../board/question_Search_Results.html"><button class="btn btn-outline-dark" type="button"style="width:100%">단어 검색</button></a>
+					<a href="../board/questionList.html"><button class="btn btn-outline-dark" type="button"style="width:100%">게시판으로 이동</button></a>
 				</div>
 			</div>
 		</div>
