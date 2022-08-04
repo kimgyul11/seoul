@@ -12,7 +12,20 @@
 		.ng-font2{
 			font-family: 'Gowun Dodum', sans-serif;
 		}
-		
+	
+	a.link1:hover{
+		background-color:black;
+		color:white;
+	}
+	.signup_box{
+		border:1px solid black;
+		background-color:white;
+		border-radius:5px;
+		color:black;
+		padding:5px;
+		text-decoration : none;
+	}
+	
 	.head-wrap{
 		width:500px;
 		margin:auto;
@@ -54,39 +67,47 @@
 	}
 	
 	.jb-wrap {
-	margin:auto;
 	position: relative;
+	height:800px;
+	background-color:#ffa726;
 	}
+	
 	.jb-wrap img {
-		vertical-align: middle;
-		width:100%;
-		height:700px;
+		width:55%;
+		height:750px;
+		margin-left:80px;
+		transform: translate( 0%, 3% );
+		
 	}
 	.jb-text {
 		text-align: center;
-		font-size:60px;
+		font-size:30px;
 		position: absolute;
 		top: 20%;
 		left: 50%;
-		transform: translate( -50%, -50% );
+		transform: translate( 65%, 30% );
 	}
 	.p1{
-		font-size:40px;
-		color:red;
+		font-size:60px;
+		color:#efebe9;
+	}
+	.p2{
+		font-size:25px;
+		color:#efebe9;
 	}
 	
 	</style>
 </head>
 <body class="ng-font2">
 <!-- 네비게이션바 -->
-	<nav class="navbar navbar-expand-sm  navbar-light"style="background-color:#616161;">
+	<nav class="navbar navbar-expand-sm  navbar-dark"style="background-color:#ffa726;">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="home.html"><i class="fa-solid fa-plane-departure"></i>AIR LANGUAGE</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-targer="#collapasibleNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav" >
 					<li class="nav-item">
 						<a class="nav-link" href="#"><i class="fa-solid fa-left-long"></i></a>
 					</li>
@@ -97,13 +118,17 @@
 			</div>
 		</div>
 	</nav>
-	<div class="jb-wrap" style="height:650px;background-color:#fafafa;">
+<!-- 배너 -->	
+<div class="contaier-fuild">
+	<div class="jb-wrap">
 		<div class="jb-text">
-			<p>AIR LANGUAGE</p>
-			<p class="p1">언제어디서나 원어민에게 물어보세요
+			<p class="p1">AIR LANGUAGE</p>
+			<p class="p2">언제,어디서나 원어민에게 물어보세요</p>
+			<a href="../member/signup.html"class="link1 signup_box">회원가입<i class="fa-solid fa-angles-right"></i></a>
 		</div>
-		<img src="../image/map.png" class="mt-0">
+		<img src="../image/social.png" class="mt-0">
 	</div>
+</div>	
 <!-- 상단 -->
 <div class="container">
 	<br>
