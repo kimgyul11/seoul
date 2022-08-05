@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="kr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>로그인</title>
+	<!-- CDN : content Delivery Network  -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Brush+Script&family=Song+Myung&display=swap');
+		.ng-font2{
+			font-family: 'Gowun Dodum', sans-serif;
+		}
+	p{
+		font-size:15px;
+		margin:0px;
+		font-weight:600;
+	}
+	.profile_box{
+	width:50px;
+	height:50px;
+	border-radius:70%;
+	overflow:hidden;
+	}
+	.profile_box img{
+		width:100%;
+		height:100%;
+		object-fit:cover;
+	}
+	.content_wrap{
+		width:90%;
+		margin:auto;
+		padding:15px;
+	}	
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm ">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">AIR LANGUAGE</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-targer="#collapasibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						
+						<div class="profile_box" style="background:black;">
+	        				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqtDg1kbYjvjQ-V-W02jlz_Nko2XGdhjJ5HGg3NWMq0I5WUkYjmdOb2U0fWoltO438hY&usqp=CAU">
+	        			</div>
+					</li>
+					<li class="nav-item">
+						<p class="m-1">KIMGIYUL</p>
+						<p class="m-1">Admin</p>
+					</li>	
+					<li class="nav-item">
+						<select class="form-select form-control m-2" aria-label="Default select example">
+					  		<option selected>언어</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">회원관리</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">서비스관리</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">사이트관리</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">사이트관리</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">로그관리</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">시스템관리</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">시스템관리</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+	<div class="container-fuild">
+	<h3>code</h3>
+		<div class="row content_wrap">
+			<div class="col-md-12">
+				<div class="row m-2">
+					<div class="col-md-6">
+						<p>아이디</p>
+						<input type="text" class="form-control" placeholder="영문(대소문자),숫자,특수문자,4~20자리 조합">
+					</div>
+				</div>
+				<div class="row m-2">
+					<div class="col-md-6">
+						<p>비밀번호</p>
+						<input type="text" class="form-control" placeholder="영문(대소문자),숫자,특수문자,8~20자리 조합">
+					</div>
+					<div class="col-md-6">
+						<p>비밀번호 확인</p>
+						<input type="text" class="form-control" >
+					</div>
+				</div>
+				<div class="row m-2">
+					<div class="col-md-6">
+						<p>이름</p>
+						<input type="text" class="form-control">
+					</div>
+					<div class="col-md-6 ">
+						<p>이름(영문)</p>
+						<input type="text" class="form-control" >
+					</div>
+				</div>
+				<div class="row m-2">
+					<div class="col-md-6">
+						<p>이름</p>
+						<input type="text" class="form-control">
+					</div>
+					<div class="col-md-6 ">
+						<p>성</p>
+						<input type="text" class="form-control" >
+					</div>
+				</div>
+				<div class="row m-2">
+					<div class="col-md-6">
+						<p>이름(영문)</p>
+						<input type="text" class="form-control">
+					</div>
+					<div class="col-md-6 ">
+						<p>성(영문))</p>
+						<input type="text" class="form-control" >
+					</div>
+				</div>
+				<div class="row m-2">
+					<div class="col-md-6">
+						<p>이름</p>
+						<select class="form-select form-control" aria-label="Default select example">
+					  		<option selected>::선택::</option>
+					  		<option value="남">남</option>
+					  		<option value="여">여</option>
+					  		<option value="기타">기타</option>
+						</select>
+					</div>
+					<div class="col-md-6 ">
+						<p>생일</p>
+						<input type="text" class="form-control" >
+					</div>
+				</div>
+				<div class="row m-2">
+					<div class="col-md-6">
+						<p>Email</p>
+						<input type="email" class="form-control" placeholder="name@example.com">
+					</div>
+					<div class="col-md-6 ">
+						<div class="form-check m-3">
+							<p>이메일 정보 마케팅 사용 동의</p>
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">동의합니다.</label>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/86d85c3d85.js" crossorigin="anonymous"></script>
+</body>
+</html>

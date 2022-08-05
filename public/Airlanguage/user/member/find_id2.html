@@ -33,8 +33,34 @@
 			-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 			box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 		}
-		.id_textbox{
-			border:1px solid;
+		.id_box{
+			height:200px;
+		}
+		.id_box_content{
+			height:100%;
+			width:100%;
+			border:1px solid #f5f5f5;
+			margin:auto;
+			text-align: center;
+			align-content: center;
+			padding:5px;
+		}
+		.id_box_content p{
+			font-size:25px;
+			font-weight: 600;
+		}
+		.hfont{
+		font-size : 18px;
+		font-weight : 700;
+		color:#ffab91;
+		}
+		.button_box{
+			width:300px;
+			margin:auto;
+		}
+		img{
+			width:55px;
+			height:55px;
 		}
 	</style>
 </head>
@@ -61,8 +87,20 @@
 <div class="container">
 	<div class="id_wrap_background row">
 		<div class="input-form col-md-12 mx-auto"><!--큰 박스  -->
+			<h3>아이디 찾기<img src="https://cdn-icons.flaticon.com/png/512/2170/premium/2170040.png?token=exp=1659661645~hmac=e24c3ba617b140c23ad9f8599fe91dfc"></a></h3>
 			<div class="id_box">
-				
+				<div class="row id_box_content">
+					<div class="col">
+						<p>회원님의 아이디는 ****입니다</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row button_box">
+				<div class="col-ms-5 ">
+					<a href="loginForm.html"><button type="button" class="btn btn btn-success form-control m-2">로그인</button></a>
+					<button type="button" class="btn btn-secondary form-control m-2">비밀번호 찾기</button>
+				</div>
 			</div>
 		</div><!-- 큰박스 끝 -->
 	</div>
