@@ -18,12 +18,16 @@
 		color:white;
 	}
 	.signup_box{
-		border:1px solid black;
+		border:1px solid #eeeeee;
 		background-color:white;
 		border-radius:5px;
 		color:black;
 		padding:5px;
 		text-decoration : none;
+		box-shadow:3px 3px 5px;
+
+
+		
 	}
 	
 	.head-wrap{
@@ -69,15 +73,24 @@
 	.jb-wrap {
 	position: relative;
 	height:800px;
-	background-color:#ffa726;
+	background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+	}	
+	.jb-wrap2{
+	background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 0%);
+
+
+
+
 	}
 	
 	.jb-wrap img {
 		width:55%;
 		height:750px;
-		margin-left:80px;
-		transform: translate( 0%, 3% );
-		
+		margin-left:10px;
+		transform: translate( 10%, 3% );
 	}
 	.jb-text {
 		text-align: center;
@@ -89,18 +102,66 @@
 	}
 	.p1{
 		font-size:60px;
-		color:#efebe9;
+		color:white;
+		text-shadow:2px 2px 3px black;
 	}
 	.p2{
 		font-size:25px;
-		color:#efebe9;
+		color:black;
+		text-shadow:1px 1px white;
 	}
-	
+	.sita{
+		height:800px;
+		background-color:#a450af;
+		padding:80px;
+	}
+	.custom-shape-divider-bottom-1659934404 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1659934404 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1659934404 .shape-fill {
+    fill: #FFFFFF;
+}
+.custom-shape-divider-bottom-1659922402 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1659922402 svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1659922402 .shape-fill {
+    fill: #FFFFFF;
+}
+
 	</style>
 </head>
 <body class="ng-font2">
 <!-- 네비게이션바 -->
-	<nav class="navbar navbar-expand-sm  navbar-dark"style="background-color:#ffa726;">
+	<nav class="navbar navbar-expand-sm  navbar-dark jb-wrap2"style="background-color:#0f58af;">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="home.html"><i class="fa-solid fa-plane-departure"></i>AIR LANGUAGE</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-targer="#collapasibleNavbar">
@@ -119,22 +180,25 @@
 		</div>
 	</nav>
 <!-- 배너 -->	
-<div class="contaier-fuild">
-	<div class="jb-wrap">
-		<div class="jb-text">
-			<p class="p1">AIR LANGUAGE</p>
-			<p class="p2">언제,어디서나 원어민에게 물어보세요</p>
-			<a href="../member/signup.html"class="link1 signup_box">회원가입<i class="fa-solid fa-angles-right"></i></a>
+	<div class="contaier-fuild"style="position:relative;">
+		<div class="jb-wrap">
+			<div class="jb-text">
+				<p class="p1">AIR LANGUAGE</p>
+				<p class="p2">언제,어디서나 원어민에게 물어보세요</p>
+				<a href="../member/signup.html"class="link1 signup_box">회원가입<i class="fa-solid fa-angles-right"></i></a>
+			</div>
 		</div>
-		<img src="../image/social.png" class="mt-0">
+		<div class="custom-shape-divider-bottom-1659922402">
+		    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+		        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+		    </svg>
+		</div>
 	</div>
-</div>	
 <!-- 상단 -->
 <div class="container">
 	<br>
 	<br>
 	<br>
-	<hr>
 	<br>
 	<br>
 	<!-- 검색창 -->
@@ -180,9 +244,7 @@
 	<!-- 중간 소개-->
 	<div class="row">
 		<div class="col-sm-4">
-			<div class="card">
-			
-			</div>
+			<div class="box">상황에 맞는 단어를 선택</div>
 		</div>
 		<div class="col-sm-4">
 			<div class="box">상황에 맞는 단어,적절한 상황에 맞는단어선택</div>
@@ -191,10 +253,11 @@
 			<div class="box">화이팅</div>
 		</div>
 	</div>
-	
+</div>	
 	<div id="br"></div>
 	<!-- 마지막 질문항목 -->
-	<div class="row text-center mx-auto">
+	<div class="contaier-fuild sita"style="position:relative;">
+	<div class="row text-center" style="margin:auto; width:1200px;">
 		<div class="col-sm-4">
 			<div class="card" style="width: 18rem; height:25rem">
 				<img src="https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727__340.jpg" class="card-img-top" alt="..." >
@@ -226,7 +289,12 @@
 			</div>			
 		</div>
 	</div>
-</div>
+	<div class="custom-shape-divider-bottom-1659934404">
+	    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+	        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+	    </svg>
+	</div>
+	</div>
 
 <footer>
 	푸터입니다.,
