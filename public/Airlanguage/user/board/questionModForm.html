@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="kr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>로그인</title>
+	<!-- CDN : content Delivery Network  -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="text.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Brush+Script&family=Song+Myung&display=swap');
+		.ng-font2{
+			font-family: 'Gowun Dodum', sans-serif;
+		}
+		*{
+		    box-sizing: border-box;
+		}        
+		.quebox_wrap{
+		    margin:50px auto;
+		    width: 800px;
+		    padding: 15px;
+		    height:500px;
+		    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.15);
+		}
+		.quebox_head{
+		    text-align: center;
+		    height: 50px;
+		    margin-bottom: 35px;
+		}
+		.quebox_head .input-group{
+		    height : 100%;
+		}
+		
+		.quebox_content .form-control{
+		    height: 100%;
+		    width: 100%;
+		    
+		}
+		.quebox_sidemenu{
+		    height: 300px;
+		} 
+		.form-select{
+		    margin-top:120px;
+		}   
+		
+		.file li{
+		    list-style: none;
+		    margin : 15px auto;
+		    text-align: center;
+		}
+		a{
+		    text-decoration: none;
+		    color:black;
+		}
+		
+		.banner{
+		    margin: auto;
+		    width: 800px;
+		}
+	</style>
+</head>
+<body class="ng-font2">
+<div class="container">
+	<div class="banner">
+		<p>질문하기</p>
+		<p>무엇이든 물어보세요</p>
+	</div>	
+	<div class="quebox_wrap">
+		<div class="quebox_head">
+			<input class="input-group" placeholder="제목을 입력하세요"></input>
+		</div>
+		<div class="row">
+			<div class="col-md-9 quebox_content">
+				<textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+			</div>
+			<div class="col-md-3 quebox_sidemenu">
+				<ul class="file">
+					<li><p>첨부파일</p></li>
+					<hr>
+					<li><a href="#"><i class="fa-solid fa-image"></i> 사진</a></li>
+					<li><a href="#"><i class="fa-solid fa-microphone"></i> 음성</a></li>
+				</ul>
+				<select class="form-select" aria-label="Default select example">
+					<option selected>언어를 선택하세요</option>
+					<option value="한국어">한국어</option>
+					<option value="영어">영어</option>
+					<option value="일본어">일본어</option>
+					<option value="중국어">중국어</option>
+				</select>
+			</div>
+		</div>
+		<div class="d-flex justify-content-center">
+			<button type="button" class="btn btn-outline-secondary m-4">등록하기</button>
+			<button type="button" class="btn btn-outline-secondary m-4">작성취소</button>
+		</div>
+	</div>
+</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/86d85c3d85.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

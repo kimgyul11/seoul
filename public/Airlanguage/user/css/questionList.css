@@ -7,14 +7,14 @@
 			margin-top:20px;
 		}
 		.zentai_box{
-			width:700px;
+			width:900px;
 			height:100%;
 			margin:auto;
 			
 		}
 		.search-background{
 			margin:auto;
-			width:700px;
+			width:900px;
 			height:50px;
 		}
 		.search-boxt{
@@ -25,9 +25,6 @@
 		}
 		.container{
 			background-color:white;
-		}
-		body{
-			background-color:#eceff1;
 		}
 		.block{
 			height:50px;
