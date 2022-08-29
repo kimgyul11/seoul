@@ -15,9 +15,64 @@
 
 
 body {
-  padding: 24px;
   margin: 0;
   box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px 16px;
+    background:gray;
+    margin:0;
+}
+.navbar_icon{
+    font-size: 24x;
+}
+.navbar_icon i{
+    color: var(--accent-color);
+}
+.navbar_menu{
+    list-style: none;
+    font-size: 18px;
+    padding-left: 0;
+    display: none;
+}
+.navbar_menu li{
+    padding: 8px 16px;
+}
+.navbar_menu li:hover{
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+.navbar_linkicon{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    
+}
+.navbar_linkicon li{
+    padding:8px 12px;
+}
+.navbar_linkicon li:hover{
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+.navbar_togglebtn{
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    display: none;
+}
+.navbar_togglebtn i{
+    color: #fafafa;
+}
+.tap{
+    margin: 300px;
 }
 
 li{
@@ -39,15 +94,22 @@ h1, h2, h3, h4, h5, h6 {
 .search_box{
 	border:1px solid;
 	width:80%;
-	background-color:red;
-	margin-right: auto;
-	margin-left: auto;
+	margin:150px auto 150px auto;
 }
 .search_top{
 	display:flex;
 }
 .search_bottom{
 	display:flex;
+}
+select{
+	width:250px;
+	height:30px;
+	text-align: center;
+	font-weight: bold;
+	margin-left:15px;
+	margin-right:15px;
+	border-radius: 15px;
 }
 
 .container {
@@ -74,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 .table-row {
   display: flex;
   width: 100%;
-  padding: 2px 0;
+  padding: 8px 0;
 }
 .table-row:nth-of-type(odd) {
   background: #EEEEEE;
@@ -83,6 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 .table-data, .header__item {
   flex: 1 1 20%;
   text-align: center;
+  color:white;
 }
 
 
@@ -97,9 +160,29 @@ h1, h2, h3, h4, h5, h6 {
 	</style>
 </head>
 <body class="ng-font2">
+		<nav class="navbar">
+           <a href="#" class="navbar_icon">
+               <i class="fa-solid fa-plane-departure"></i>
+               <span>Air Language</span>        
+           </a>
+           <ul class="navbar_menu">
+               <li><a href="#">소개</a></li>
+               <li><a href="#">질문게시판</a></li>
+               <li><a href="#">공지사항</a></li>
+               <li><a href="#">1:1문의</a></li>
+           </ul>
+           <ul class="navbar_linkicon">
+               <li><a href="">로그인</a></li>
+               <li><a href=""><i class="fa-solid fa-house-chimney-window"></i></a></li>
+           </ul>
+           <a href="#" class="navbar_togglebtn">
+               <i class="fa-solid fa-bars"></i>
+           </a>
+       </nav>
+     
 	<div class="code_wrap">	
-	<h1>코드그룹관리</h1>
 		<div class="search_box">
+		<h1>코드그룹관리</h1>
 			<ul class="search_top">
 				<li>
 					<select>
@@ -136,48 +219,68 @@ h1, h2, h3, h4, h5, h6 {
 				<div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">코드그룹 영문</a></div>
 				<div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">코드 개수</a></div>
 				<div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">등록일</a></div>
-				<div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">수정일</a></div>
+				<div class="header__item">수정일</div>
 			</div>
 			<div class="table-content">	
 				<div class="table-row">
 					<div class="table-data"><input type="checkbox"></div>		
-					<div class="table-data">#</div>
-					<div class="table-data">2</div>
-					<div class="table-data">0</div>
-					<div class="table-data">1</div>
-					<div class="table-data">5</div>
-					<div class="table-data">5</div>
-					<div class="table-data">5</div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
 				</div>
 				<div class="table-row">
 					<div class="table-data"><input type="checkbox"></div>	
-					<div class="table-data">ㄴ</div>
-					<div class="table-data">1</div>
-					<div class="table-data">1</div>
-					<div class="table-data">2</div>
-					<div class="table-data">3</div>
-					<div class="table-data">5</div>
-					<div class="table-data">5</div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
 				</div>
 				<div class="table-row">
 					<div class="table-data"><input type="checkbox"></div>	
-					<div class="table-data">Harry</div>
-					<div class="table-data">0</div>
-					<div class="table-data">2</div>
-					<div class="table-data">2</div>
-					<div class="table-data">2</div>
-					<div class="table-data">5</div>
-					<div class="table-data">5</div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
 				</div>
 				<div class="table-row">		
 					<div class="table-data"><input type="checkbox"></div>	
-					<div class="table-data">Tom</div>
-					<div class="table-data">2</div>
-					<div class="table-data">0</div>
-					<div class="table-data">1</div>
-					<div class="table-data">5</div>
-					<div class="table-data">5</div>
-					<div class="table-data">5</div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+				</div>
+				<div class="table-row">		
+					<div class="table-data"><input type="checkbox"></div>	
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+				</div>
+				<div class="table-row">		
+					<div class="table-data"><input type="checkbox"></div>	
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
+					<div class="table-data"></div>
 				</div>
 			</div>	
 		</div>
